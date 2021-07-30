@@ -27,13 +27,11 @@ class Box{
     }
 
     flingForward(){
-        Matter.Body.setVelocity(this.body, { x: 3, y: -5 });
-        Matter.Body.setAngularVelocity(this.body, 0.2);
+      
     }
 
     flingBack(){
-        Matter.Body.setVelocity(this.body, { x: -3, y: -5 });
-        Matter.Body.setAngularVelocity(this.body, -0.2);
+        
     }
 
     flingUp(){
