@@ -1,5 +1,5 @@
 class Ground{
-    constructor(x, y, width, height, angle, choice){
+    constructor(x, y, width, height){
         var ground_options = {
             isStatic: true
         }
@@ -7,18 +7,13 @@ class Ground{
         this.body = Bodies.rectangle(x, y, width, height, ground_options);
         this.width = width;
         this.height = height;
-        Matter.Body.setAngle(this.body, angle);
-        if(choice === 1){
-            this.image = loadImage("land.png");
-        }else{
-            this.image = loadImage("base.png");
-        }
+        //this.image=
         World.add(world, this.body);
     }
 
     display(){
         var pos = this.body.position;
         imageMode(CENTER);
-        image(this.image, pos.x, pos.y, this.width, this.height);
+       // image(this.image, pos.x, pos.y, this.width, this.height);
     }
 }
