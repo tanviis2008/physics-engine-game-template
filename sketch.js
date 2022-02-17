@@ -138,14 +138,14 @@ box1.display()
 function keyPressed(){
  if(keyCode === 39 ){
   
- 
+ box1.flinkForward()
  }
  if(keyCode === 38 ){
   
- 
+ box1.flinkUp()
  }
  if(keyCode === 37 ){
   
- 
+ box1.flinkBack()
  }
 }
