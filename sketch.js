@@ -70,7 +70,7 @@ function setup() {
   
   box1=new Box(150,50,20,20)
   }
-}
+
 
 function draw() {
   //set the background
